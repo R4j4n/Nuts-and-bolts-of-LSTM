@@ -1,7 +1,7 @@
 <h1 align='center'>🔩 Nuts and Bolts of LSTM 🔩</h1>
 
 * * * 
-![](img/LSTM.png)
+![](img/LSTM.jpg)
 
 Here hidden state is broken into two states: 
 1. Cell state($C_t$) : It is called the internal memory where all information will be stored.
