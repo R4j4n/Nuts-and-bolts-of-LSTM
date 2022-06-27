@@ -25,7 +25,7 @@ Then, pass the same two inputs into the tanh activation to obtain candidate stat
 
 ## Forward propagation in pytorch : 
 Initializing weights : 
-```
+```python
 Input Gate : 
 W_i = nn.Parameter(torch.Tensor(input_sz, hidden_sz))
 U_i = nn.Parameter(torch.Tensor(hidden_sz, hidden_sz))
@@ -47,7 +47,7 @@ U_o = nn.Parameter(torch.Tensor(hidden_sz, hidden_sz))
 b_o = nn.Parameter(torch.Tensor(hidden_sz))
 ```
 Forward pass : 
-```
+```python
 i_t = torch.sigmoid(x_t @ W_i + h_t @ U_i + b_i)
 f_t = torch.sigmoid(x_t @ W_f + h_t @ U_f + b_f)
 g_t = torch.tanh(x_t @ W_c + h_t @ U_c + b_c)
